@@ -17,6 +17,7 @@ public class javaderss2class {
 			System.out.printf("%5d%8d%n",counter,array[counter]);
 			
 		}
+		
 	}
 
 }
