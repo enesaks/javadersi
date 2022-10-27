@@ -1,19 +1,15 @@
 package javaders;
 
-public class javadersclass {
+public class javaderss2class {
 
 	public static void main(String[] args) {
-	
-		int[]  array = {32,23,4,21,56,23,66,72,45,23};
+		final int ARRAY_LENGTH = 10;
+		int[] array =new int[ARRAY_LENGTH];
 		
-		int j=9,temp;
-		
-		for(int i=0;i<array.length/2; i++) {
-			temp =array[i];
-			array[i]=array[j];
-			array[j] = temp;
-			j--;	
+		for (int i=0; i<array.length;i++) {
+			array[i] = 2+2*i;
 		}
+		
 		
 		System.out.printf("%s%8s%n","Index","value");
 		for(int counter =0; counter<array.length; counter++)
@@ -21,7 +17,6 @@ public class javadersclass {
 			System.out.printf("%5d%8d%n",counter,array[counter]);
 			
 		}
-		
 	}
 
 }
